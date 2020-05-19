@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <PreferenceCategory android:title="Miscellaneous">
+        <de.mordsgau.accant.ui.preferences.AcknowledgementDialogPreference
+            android:key="acknowledgement_pref"
+            android:title="Acknowledgements"
+            android:icon="@drawable/outline_info_24"
+            android:dialogLayout="@layout/preference_acknowledgement_dialog"
+            android:summary="License information"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

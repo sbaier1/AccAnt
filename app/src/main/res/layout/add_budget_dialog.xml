@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title2"
+        android:text="@string/add_a_budget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/add_budget_dialog_title"/>
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/name"
+        app:layout_constraintTop_toBottomOf="@id/add_budget_dialog_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_budget_dialog_name"
+        />
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/budget_amount"
+        app:layout_constraintTop_toBottomOf="@id/add_budget_dialog_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_budget_dialog_amount"
+        />
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/budget_account_link"
+        app:layout_constraintTop_toBottomOf="@id/add_budget_dialog_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_budget_dialog_account"
+        />
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/budget_frequency"
+        app:layout_constraintTop_toBottomOf="@id/add_budget_dialog_account"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_budget_dialog_frequency"
+        />
+
+    <EditText
+        android:layout_margin="30dp"
+        android:id="@+id/add_budget_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        style="@style/Title2"
+        android:hint="Budget Name"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_budget_dialog_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/add_budget_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Body1"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_budget_dialog_amount"
+        app:layout_constraintEnd_toStartOf="@id/add_budget_total"
+        android:text="€"/>
+
+    <EditText
+        android:layout_margin="30dp"
+        android:id="@+id/add_budget_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        style="@style/Body1"
+        android:inputType="numberDecimal"
+        android:hint="100.00"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_budget_dialog_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Spinner
+        android:id="@+id/add_budget_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:dropDownWidth="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_budget_dialog_account"/>
+
+    <Spinner
+        android:id="@+id/add_budget_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_budget_dialog_frequency" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

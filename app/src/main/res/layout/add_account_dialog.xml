@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title2"
+        android:text="@string/add_an_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/add_account_dialog_title"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/name"
+        app:layout_constraintTop_toBottomOf="@id/add_account_dialog_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_account_dialog_name"
+        />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/user_id"
+        app:layout_constraintTop_toBottomOf="@id/add_account_dialog_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_account_dialog_user_id"
+        />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/bank_code_blz"
+        app:layout_constraintTop_toBottomOf="@id/add_account_dialog_user_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_account_dialog_bank_code"
+        />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Subtitle2"
+        android:text="@string/password_pin"
+        app:layout_constraintTop_toBottomOf="@id/add_account_dialog_bank_code"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/add_account_dialog_pin"
+        />
+
+    <EditText
+        android:layout_margin="16dp"
+        android:id="@+id/add_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        style="@style/Title2"
+        android:hint="Account 1"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_account_dialog_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:layout_margin="16dp"
+        android:id="@+id/add_account_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        style="@style/Body1"
+        android:inputType="number"
+        android:hint="1234567890"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_account_dialog_user_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:layout_margin="16dp"
+        android:id="@+id/add_account_bank_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:inputType="numberSigned"
+        style="@style/Body1"
+        android:hint="123456789"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_account_dialog_bank_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:layout_margin="16dp"
+        android:id="@+id/add_account_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:inputType="numberPassword"
+        style="@style/Body1"
+        android:hint="1234"
+        app:layout_constraintBaseline_toBaselineOf="@id/add_account_dialog_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
